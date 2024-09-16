@@ -1,6 +1,6 @@
 layers:
   default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', TAB, Q, W, E, R, T, Y, U, I, O, P, '-', '`', A, S, D, F, G, H, J, K, L, ;, '''', LEFT CONTROL,
-    Z, X, C, V, B, N, M, ',', ., /, \, MUTE, LEFT ALT, lower, LEFT SHIFT, BACKSPACE, RET, SPACE, DELETE, raise, RALT, RGUI, '&mkp LCLK', RIGHT, UP ARROW, LEFT, DOWN]
+    Z, X, C, V, B, N, M, ',', ., /, \, MUTE, LEFT GUI, lower, LEFT SHIFT, BACKSPACE, SPACE, RET, DELETE, raise, RALT, RGUI, '&mkp LCLK', RIGHT, UP ARROW, LEFT, DOWN]
   lower:
   - {t: ▽, type: trans}
   - F1
