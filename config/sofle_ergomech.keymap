@@ -42,15 +42,17 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC           &kp N1        &kp N2  &kp N3          &kp N4         &kp N5   &kp N6     &kp N7      &kp N8        &kp N9    &kp N0    &kp EQUAL
-&kp TAB           &kp Q         &kp W   &kp E           &kp R          &kp T    &kp Y      &kp U       &kp I         &kp O     &kp P     &kp MINUS
-&kp GRAVE         &kp A         &kp S   &kp D           &kp F          &kp G    &kp H      &kp J       &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z         &kp X   &kp C           &kp V          &kp B    &kp N      &kp M       &kp COMMA     &kp DOT   &kp FSLH  &kp BACKSLASH
-&kp C_MUTE        &kp LEFT_ALT  &mo 1   &kp LEFT_SHIFT  &kp BACKSPACE  &kp RET  &kp SPACE  &kp DELETE  &mo 2         &kp RALT  &kp RGUI
-                                                                                &mkp LCLK  &kp RIGHT   &kp UP_ARROW  &kp LEFT  &kp DOWN
+&kp ESC           &kp N1        &kp N2  &kp N3          &kp N4         &kp N5     &kp N6     &kp N7      &kp N8        &kp N9    &kp N0    &kp EQUAL
+&kp TAB           &kp Q         &kp W   &kp E           &kp R          &kp T      &kp Y      &kp U       &kp I         &kp O     &kp P     &kp MINUS
+&kp GRAVE         &kp A         &kp S   &kp D           &kp F          &kp G      &kp H      &kp J       &kp K         &kp L     &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z         &kp X   &kp C           &kp V          &kp B      &kp N      &kp M       &kp COMMA     &kp DOT   &kp FSLH  &kp BACKSLASH
+&kp C_MUTE        &kp LEFT_GUI  &mo 1   &kp LEFT_SHIFT  &kp BACKSPACE  &kp SPACE  &kp RET    &kp DELETE  &mo 2         &kp RALT  &kp RGUI
+                                                                                  &mkp LCLK  &kp RIGHT   &kp UP_ARROW  &kp LEFT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_DN &inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
